@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+  <h1>Candidate Portal</h1>
+  <div class="sendInfo">
+
+      <form name="candidate">
+          <input type="text" name="name" placeholder="name"/>
+          <input type="email" name="email" placeholder="email"/>
+          <input class="submit" type="submit" value="Create Contact"/>
+      </form>
+
+  </div>
+
+  <div class="showInfo">
+    <div>Name:</div><div class = "name" contenteditable="true"> </div>
+    <div>Email:</div><div class = "email" contenteditable="true"> </div>
+    <button class = "edit" data-u-id = "">Edit Info</button>
+    <button class = "delete" data-u-id = "">Delete Contact</button>
+
+</div>
+  <div class="getInfo">
+
+      <form name="email">
+
+          <input type="email" name="email" placeholder="email"/>
+          <input class="submitGet" type="submit" value="Get Info"/>
+          <button class="submitGetAll" >Get All Info</button>
+      </form>
+
+  </div>
+
+    <script src="/javascripts/Calls.js"></script>
+  </body>
+
+</html>

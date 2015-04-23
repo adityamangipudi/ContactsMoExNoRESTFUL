@@ -1,0 +1,41 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+div.sendInfo{
+    border: 1px solid black;
+    background-color: #00B7FF;
+    height: 10em;
+    width: 14em;
+}
+div.getInfo{
+    margin-top:1em;
+    border: 1px solid black;
+    background-color: #00B7FF;
+    height: 10em;
+    width: 14em;
+}
+div.showInfo{
+
+    margin-top:1em;
+    border: 1px solid black;
+    background-color: green;
+    height: 12em;
+    width: 14em;
+}
+div.showInfo>div{
+    margin:1em;
+}
+div.showInfo>button.delete{
+    float:right;
+}
+input{
+    margin:1em;
+}
+input.submit{
+   float:right
+}
