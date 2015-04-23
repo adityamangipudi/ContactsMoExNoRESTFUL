@@ -167,15 +167,16 @@ document.addEventListener('DOMContentLoaded', function () {
        if(Object.prototype.toString.call( obj ) === '[object Array]'){
            obj = obj.pop()
        }
+        if(typeof obj !=='undefined'){
+            var pname = document.querySelector('div.name');
+            var pemail = document.querySelector('div.email');
 
+            pname.innerHTML = obj.name;
+            pemail.innerHTML = obj.email;
+            deleteBut.dataset.uId = obj._id;
+            edit.dataset.uId = obj._id;
+        }
 
-        var pname = document.querySelector('div.name');
-        var pemail = document.querySelector('div.email');
-
-        pname.innerHTML = obj.name;
-        pemail.innerHTML = obj.email;
-        deleteBut.dataset.uId = obj._id;
-        edit.dataset.uId = obj._id;
 
 
     }
