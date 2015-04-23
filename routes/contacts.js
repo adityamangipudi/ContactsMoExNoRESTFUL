@@ -52,10 +52,10 @@ router.put('/', function (req, res){
 
 
 
-router.delete('/', function (req, res){
+router.delete('/:_id', function (req, res){
 
 
-    ContactModel.remove({_id: req.query._id},function(err, result){
+    ContactModel.remove({_id: req.params._id||req.query._id},function(err, result){
         if(err) res.status(500).json(err)
         else res.status(200).json(result)
     });

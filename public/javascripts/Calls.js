@@ -158,8 +158,10 @@ document.addEventListener('DOMContentLoaded', function () {
     getone.addEventListener('click', function(event){
         event.preventDefault();
            // ContactService.put()
+        if(document.forms.email.email.value!==''){
+            ContactService.get(document.forms.email.email.value)
 
-        ContactService.get(document.forms.email.email.value)
+        }
     })
 
 
